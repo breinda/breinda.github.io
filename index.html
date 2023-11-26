@@ -7,7 +7,7 @@
 	</head>
 
 	<body>
-		<div id="styleswitcher" onclick="toggleDarkMode()">
+		<div id="styleswitcher">
 			<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 125" x="0px" y="0px" id="moon-svg">
 				<!-- dark mode by Gregor Cresnar from <a href="https://thenounproject.com/browse/icons/term/dark-mode/" target="_blank" title="dark mode Icons">Noun Project</a> (CC BY 3.0) -->
 				<title>Toggle Dark Mode</title>
@@ -103,7 +103,7 @@
 		</div>
 	</body>
 
-	<script>
+	<!-- <script>
 		function toggleDarkMode() {
 			let body = document.body
 			body.classList.toggle('dark-mode')
@@ -129,6 +129,16 @@
 				sunSvg.style.display = DISPLAY_NONE_STR
 				moonSvg.style.display = DISPLAY_BLOCK_STR
 			}
+
+			// let theme = localStorage.getItem('theme')
+			// if (theme && theme === 'dark-mode') {
+			// 	localStorage.setItem('theme', '')
+			// } else {
+			// 	localStorage.setItem('theme', 'dark-mode')
+			// }
+
+			// document.getElementById('theme').textContent = localStorage.getItem('theme')
 		}
-	</script>
+	</script> -->
+	<script src="scripts/styleSetter.js"></script>
 </html>
