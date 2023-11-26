@@ -67,15 +67,16 @@ img {
     border-radius: 20px;
 }
 
-#hey {
+#greeting {
     animation: shake 2s;
     animation-iteration-count: 1.5;
     display: inline-block;
 }
 
-#hey:hover {
+#greeting:hover {
     animation: shake 2s;
-    animation-iteration-count: infinite;}
+    animation-iteration-count: infinite;
+}
 
 #container {
     position: relative;
@@ -136,7 +137,6 @@ img {
     align-items: center;
     justify-content: center;
 
-    /* padding: 10px; */
     padding: 0 10px 0 10px;
     margin: 1px;
 }
@@ -187,6 +187,19 @@ img {
     display: block;
     fill: #464655;
 }
+
+/* when hover is supported */
+/* @media (hover: hover) {
+    #greeting:hover {
+        animation: shake 2s;
+        animation-iteration-count: infinite;
+    }
+
+    #moi:hover {
+        animation: wigglewiggle 2s;
+        animation-iteration-count: infinite;
+    }
+} */
 
 /* animation specs */
 @keyframes wiggle {
