@@ -1,8 +1,10 @@
+/* colour reference: https://coolors.co/464655-94958b-b7b6c1-d5cfe1-eddfef */
+
 body {
-    color: #000000;
+    color: #464655;
     font-family: verdana, sans-serif;
     font-size: 10pt;
-    background: #ffffff;
+    background: #EDDFEF;
     margin: 0;
     padding: 0;
 }
@@ -10,13 +12,13 @@ body {
 a:link,
 a:visited {
     text-decoration: underline;
-    color: #000000;
+    color: #464655;
 }
 
 a:active,
 a:hover {
     text-decoration: underline;
-    color: #888888;
+    color: #94958B;
 }
 
 img {
@@ -80,20 +82,20 @@ img {
 
 #sun-svg {
     display: none;
-    fill: #ffffff;
+    fill: #EDDFEF;
 }
 
 #moon-svg {
     display: block;
-    fill: #000000;
+    fill: #464655;
 }
 
 /* dark mode styles */
 .dark-mode {
-    color: #ffffff;
-    background: #000000;
+    color: #EDDFEF;
+    background: #464655;
 }
 
 .dark-mode a {
-    color: #ffffff;
+    color: #EDDFEF;
 }
