@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-		<title>Main | bREINDA</title>
+		<title>brenda carrocino | software engineer</title>
 		<link rel="stylesheet" href="styles/default-style.css" type="text/css" />
 	</head>
 
@@ -24,8 +24,12 @@
 			</svg>
 		</div>
 
-		<div id="header">
-			<img src="Your banner" alt="bREINDA's personal website" />
+		<div class="header">
+			<!-- <img src="Your banner" alt="bREINDA's personal website" /> -->
+			<div class="header-text-container">
+				<h1>hey, i'm brenda carrocino.</h1>
+				</svg>
+			</div>
 		</div>
 
 		<div id="container">
@@ -36,6 +40,21 @@
 			<div id="leftmenu">
 				<ul>
 					<li>
+						<i>links and stuff</i>
+						<ul>
+							<li>
+								<a href="https://github.com/breinda" rel="noreferrer" target="_blank">github</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/brenda-carrocino/" rel="noreferrer" target="_blank">linkedin</a>
+							</li>
+							<li>
+								<a href="mailto:brendac@live.it" rel="noreferrer" target="_blank">mail me!</a>
+							</li>
+						</ul>
+					</li>
+
+					<!-- <li>
 						Category
 						<ul>
 							<li><a href="#">Link</a></li>
@@ -53,22 +72,12 @@
 							<li><a href="#">Link</a></li>
 							<li><a href="#">Link</a></li>
 						</ul>
-					</li>
-
-					<li>
-						Category
-						<ul>
-							<li><a href="#">Link</a></li>
-							<li><a href="#">Link</a></li>
-							<li><a href="#">Link</a></li>
-							<li><a href="#">Link</a></li>
-						</ul>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 
 			<div id="rightmenu">
-				<ul>
+				<!-- <ul>
 					<li>
 						Category
 						<ul>
@@ -98,47 +107,9 @@
 							<li><a href="#">Link</a></li>
 						</ul>
 					</li>
-				</ul>
+				</ul> -->
 			</div>
 		</div>
 	</body>
-
-	<!-- <script>
-		function toggleDarkMode() {
-			let body = document.body
-			body.classList.toggle('dark-mode')
-			switchDarkModeSvgIcon()
-		}
-
-		function switchDarkModeSvgIcon() {
-			const DISPLAY_NONE_STR = 'none'
-			const DISPLAY_BLOCK_STR = 'block'
-
-			const moonSvg = document.getElementById('moon-svg')
-			const sunSvg = document.getElementById('sun-svg')
-
-			const moonSvgDisplay = window.getComputedStyle(moonSvg).getPropertyValue('display')
-			const sunSvgDisplay = window.getComputedStyle(sunSvg).getPropertyValue('display')
-
-			if (sunSvgDisplay === DISPLAY_NONE_STR) {
-				// if we are using light mode, change to dark
-				sunSvg.style.display = DISPLAY_BLOCK_STR
-				moonSvg.style.display = DISPLAY_NONE_STR
-			} else {
-				// if we are using dark mode, change to light
-				sunSvg.style.display = DISPLAY_NONE_STR
-				moonSvg.style.display = DISPLAY_BLOCK_STR
-			}
-
-			// let theme = localStorage.getItem('theme')
-			// if (theme && theme === 'dark-mode') {
-			// 	localStorage.setItem('theme', '')
-			// } else {
-			// 	localStorage.setItem('theme', 'dark-mode')
-			// }
-
-			// document.getElementById('theme').textContent = localStorage.getItem('theme')
-		}
-	</script> -->
 	<script src="scripts/styleSetter.js"></script>
 </html>

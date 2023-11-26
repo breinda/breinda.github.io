@@ -25,14 +25,28 @@ img {
     border: 0px;
 }
 
-#header {
+.header {
     text-align: center;
     height: 150px;
 }
 
-#header img {
-    margin: auto;
+.header-text-container {
+    transform: rotate(2deg);
+    background-color: #F1C40F;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
 }
+
+h1 {
+    color: #464655;
+}
+
+/* #header img {
+    margin: auto;
+} */
 
 #container {
     position: relative;
@@ -75,7 +89,6 @@ img {
     margin-right: 10px;
     display: block;
     margin-left: auto;
-    /* text-align: center; */
     width: 30px;
     height: 30px;
 }
