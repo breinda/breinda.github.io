@@ -1,24 +1,47 @@
 /* colour reference: https://coolors.co/464655-94958b-b7b6c1-d5cfe1-eddfef */
 
+html {
+    -webkit-text-size-adjust: 100%;
+    font-size: 12px;
+}
+
 body {
     color: #464655;
     font-family: verdana, sans-serif;
-    font-size: 10pt;
+    font-size: 1.3rem;
     background: #EDDFEF;
     margin: 0;
     padding: 0;
 }
 
-a:link,
-a:visited {
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+/* @media screen and (min-width: 601px) {
+    p {
+        font-size: 10pt;
+    }
+} */
+  
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+/* @media screen and (max-width: 600px) {
+    p {
+        font-size: 20pt;
+    }
+} */
+
+a:link {
     text-decoration: underline;
-    color: #464655;
+    color: #ED4D6E;
 }
 
-a:active,
-a:hover {
+a:visited,
+a:active {
     text-decoration: underline;
     color: #94958B;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #F07933;
 }
 
 img {
@@ -60,8 +83,8 @@ h1 {
 }
 
 #content {
-    margin-left: 145px;
-    margin-right: 145px;
+    margin-left: 175px;
+    margin-right: 175px;
     padding: 5px;
     text-align: center;
 }
@@ -70,7 +93,7 @@ h1 {
     position: absolute;
     left: 5px;
     top: 0;
-    width: 130px;
+    width: 150px;
     padding: 5px;
     text-align: left;
 }
@@ -79,7 +102,7 @@ h1 {
     position: absolute;
     right: 5px;
     top: 0;
-    width: 130px;
+    width: 150px;
     padding: 5px;
     text-align: right;
 }
@@ -167,4 +190,20 @@ h1 {
 
 .dark-mode a {
     color: #EDDFEF;
+}
+
+.dark-mode a:link {
+    text-decoration: underline;
+    color: #ED4D6E;
+}
+
+.dark-mode a:visited,
+.dark-mode a:active {
+    text-decoration: underline;
+    color: #94958B;
+}
+
+.dark-mode a:hover {
+    text-decoration: underline;
+    color: #F07933;
 }
