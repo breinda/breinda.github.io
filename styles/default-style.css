@@ -75,9 +75,25 @@ img {
     margin-left: auto;
     /* text-align: center; */
     width: 30px;
-    height: 30px
+    height: 30px;
 }
 
-#toggle-dark-mode {
-    background-image: url(assets/dark-mode.svg);
+#sun-svg {
+    display: none;
+    fill: #ffffff;
+}
+
+#moon-svg {
+    display: block;
+    fill: #000000;
+}
+
+/* dark mode styles */
+.dark-mode {
+    color: #ffffff;
+    background: #000000;
+}
+
+.dark-mode a {
+    color: #ffffff;
 }
