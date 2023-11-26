@@ -107,7 +107,10 @@
 		function toggleDarkMode() {
 			let body = document.body
 			body.classList.toggle('dark-mode')
+			switchDarkModeSvgIcon()
+		}
 
+		function switchDarkModeSvgIcon() {
 			const DISPLAY_NONE_STR = 'none'
 			const DISPLAY_BLOCK_STR = 'block'
 
