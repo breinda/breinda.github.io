@@ -73,7 +73,8 @@ img {
     display: inline-block;
 }
 
-#greeting:hover {
+/* all :hover rules need to be prepended with body.hasHover */
+body.hasHover #greeting:hover {
     animation: shake 2s;
     animation-iteration-count: infinite;
 }
@@ -164,7 +165,8 @@ img {
     align-self: start
 }
 
-#moi:hover {
+/* all :hover rules need to be prepended with body.hasHover */
+body.hasHover #moi:hover {
     animation: wigglewiggle 2s;
     animation-iteration-count: infinite;
 }
@@ -187,19 +189,6 @@ img {
     display: block;
     fill: #464655;
 }
-
-/* when hover is supported */
-/* @media (hover: hover) {
-    #greeting:hover {
-        animation: shake 2s;
-        animation-iteration-count: infinite;
-    }
-
-    #moi:hover {
-        animation: wigglewiggle 2s;
-        animation-iteration-count: infinite;
-    }
-} */
 
 /* animation specs */
 @keyframes wiggle {
