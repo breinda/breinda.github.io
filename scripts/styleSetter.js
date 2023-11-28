@@ -10,7 +10,7 @@ const LIGHT_MODE_STR = 'light-mode'
 const DISPLAY_NONE_STR = 'none'
 const DISPLAY_BLOCK_STR = 'block'
 
-const styleswitcher = document.getElementById('styleswitcher')
+const styleswitcher = document.getElementById('style-switcher')
 
 if (!localStorage.getItem(THEME_STR)) {
 	console.log('no theme defined => populating theme as LIGHT (default)')

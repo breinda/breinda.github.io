@@ -48,7 +48,7 @@ a:hover {
     color: #F07933;
 }
 
-#styleswitcher {
+#style-switcher {
     margin-top: 0.85rem;
     margin-right: 0.85rem;
 
@@ -108,7 +108,7 @@ body.with-mouse-input #greeting:hover {
     text-align: center;
 }
 
-#leftmenu {
+#left-menu {
     position: absolute;
     left: 0.45rem;
     top: 0;
@@ -117,7 +117,7 @@ body.with-mouse-input #greeting:hover {
     text-align: left;
 }
 
-#rightmenu {
+#right-menu {
     position: absolute;
     right: 0.45rem;
     top: 0;
@@ -126,14 +126,14 @@ body.with-mouse-input #greeting:hover {
     text-align: right;
 }
 
-#leftmenu ul,
-#rightmenu ul {
+#left-menu ul,
+#right-menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0 0.45rem;
 }
 
-.talktome {
+.talk-to-me {
     display: flex;
     margin-top: 0.85rem;
 }
