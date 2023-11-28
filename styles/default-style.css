@@ -54,7 +54,7 @@ img {
 
 .header {
     text-align: center;
-    height: 150px;
+    height: 12.5rem;
 }
 
 .header-text-container {
@@ -73,8 +73,8 @@ img {
     display: inline-block;
 }
 
-/* all :hover rules need to be prepended with body.hasHover */
-body.hasHover #greeting:hover {
+/* all :hover rules need to be prepended with body.with-mouse-input */
+body.with-mouse-input #greeting:hover {
     animation: shake 2s;
     animation-iteration-count: infinite;
 }
@@ -159,14 +159,14 @@ body.hasHover #greeting:hover {
 
 #moi {
     border-radius: 50%;
-    width: 68px;
+    width: 5.65rem;
     height: auto;
     aspect-ratio: 1;
     align-self: start
 }
 
-/* all :hover rules need to be prepended with body.hasHover */
-body.hasHover #moi:hover {
+/* all :hover rules need to be prepended with body.with-mouse-input */
+body.with-mouse-input #moi:hover {
     animation: wigglewiggle 2s;
     animation-iteration-count: infinite;
 }
