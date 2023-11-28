@@ -1,3 +1,5 @@
+'use strict'
+
 /**
  * This is used to detect touch vs. mouse inputs/devices.
  *
