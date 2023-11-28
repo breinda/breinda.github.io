@@ -13,37 +13,32 @@ const DISPLAY_BLOCK_STR = 'block'
 const styleswitcher = document.getElementById('style-switcher')
 
 if (!localStorage.getItem(THEME_STR)) {
-	// no theme defined => populating theme as LIGHT (default)
+	// no theme defined => will set theme as LIGHT (default)
 	populateStorage()
-} else {
-	// theme already defined => setting style according to theme
-	setStyles()
 }
+// setting style according to theme
+setStyles()
 
 function switchBetweenDarkAndLightThemes() {
 	let body = document.body
 	body.classList.toggle(DARK_MODE_STR)
 	populateStorage()
+	setStyles()
 }
 
 // populate local storage with values, then apply/set those values
-// default mode is LIGHT MODE
 function populateStorage() {
 	const body = document.body
 	const isDarkModeToggled = body.classList.contains(DARK_MODE_STR)
 
 	if (isDarkModeToggled) {
-		// dark mode is toggled => setting style as DARK
 		localStorage.setItem(THEME_STR, DARK_MODE_STR)
 	} else {
-		// light mode is toggled => setting style as LIGHT
 		localStorage.setItem(THEME_STR, LIGHT_MODE_STR)
 	}
-
-	setStyles()
 }
 
-// apply the style that is currently set in local storage
+// apply the style that is currently stored in local storage
 function setStyles() {
 	const theme = localStorage.getItem(THEME_STR)
 
@@ -56,18 +51,18 @@ function setStyles() {
 	// const sunSvgDisplay = window.getComputedStyle(sunSvg).getPropertyValue('display')
 
 	if (theme === LIGHT_MODE_STR) {
-		// theme is LIGHT -> hiding sun icon, displaying moon icon
-
+		// change icon to MOON
 		sunSvg.style.display = DISPLAY_NONE_STR
 		moonSvg.style.display = DISPLAY_BLOCK_STR
 
+		// apply light mode styling
 		body.classList.remove(DARK_MODE_STR)
 	} else {
-		// theme is DARK -> hiding moon icon, displaying sun icon
-
+		// change icon to SUN
 		sunSvg.style.display = DISPLAY_BLOCK_STR
 		moonSvg.style.display = DISPLAY_NONE_STR
 
+		// apply dark mode styling
 		body.classList.add(DARK_MODE_STR)
 	}
 }
