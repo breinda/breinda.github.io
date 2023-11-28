@@ -16,15 +16,7 @@ if (!localStorage.getItem(THEME_STR)) {
 	// no theme defined => will set theme as LIGHT (default)
 	populateStorage()
 }
-// setting style according to theme
-setStyles()
-
-function switchBetweenDarkAndLightThemes() {
-	let body = document.body
-	body.classList.toggle(DARK_MODE_STR)
-	populateStorage()
-	setStyles()
-}
+applyStylesAccordingToTheme()
 
 // populate local storage with values, then apply/set those values
 function populateStorage() {
@@ -38,8 +30,7 @@ function populateStorage() {
 	}
 }
 
-// apply the style that is currently stored in local storage
-function setStyles() {
+function applyStylesAccordingToTheme() {
 	const theme = localStorage.getItem(THEME_STR)
 
 	const body = document.body
@@ -65,6 +56,13 @@ function setStyles() {
 		// apply dark mode styling
 		body.classList.add(DARK_MODE_STR)
 	}
+}
+
+function switchBetweenDarkAndLightThemes() {
+	let body = document.body
+	body.classList.toggle(DARK_MODE_STR)
+	populateStorage()
+	applyStylesAccordingToTheme()
 }
 
 styleswitcher.onclick = switchBetweenDarkAndLightThemes
