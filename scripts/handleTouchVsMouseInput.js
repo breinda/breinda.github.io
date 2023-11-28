@@ -11,6 +11,9 @@
 function handleTouchVsMouseInput() {
 	const WITH_MOUSE_INPUT_CLASS = 'with-mouse-input'
 
+	const TOUCH_START_EVENT = 'touchstart'
+	const MOUSE_MOVE_EVENT = 'mousemove'
+
 	/**
 	 * Used for ignoring emulated `mousemove` events
 	 * that are fired after `touchstart` events.
@@ -34,9 +37,9 @@ function handleTouchVsMouseInput() {
 		document.body.classList.add(WITH_MOUSE_INPUT_CLASS)
 	}
 
-	document.addEventListener('touchstart', updateLastTouchTime, true)
-	document.addEventListener('touchstart', disableMouseRequiredFunctionality, true)
-	document.addEventListener('mousemove', determineIfMouseInput, true)
+	document.addEventListener(TOUCH_START_EVENT, updateLastTouchTime, true)
+	document.addEventListener(TOUCH_START_EVENT, disableMouseRequiredFunctionality, true)
+	document.addEventListener(MOUSE_MOVE_EVENT, determineIfMouseInput, true)
 
 	determineIfMouseInput()
 }
