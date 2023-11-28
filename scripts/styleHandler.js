@@ -13,40 +13,37 @@ const DISPLAY_BLOCK_STR = 'block'
 const styleswitcher = document.getElementById('style-switcher')
 
 if (!localStorage.getItem(THEME_STR)) {
-	console.log('no theme defined => populating theme as LIGHT (default)')
-
+	// no theme defined => populating theme as LIGHT (default)
 	populateStorage()
 } else {
-	console.log('theme already defined => setting style according to theme')
+	// theme already defined => setting style according to theme
 	setStyles()
 }
 
-function switchDarkLightTheme() {
-	console.log('switching between light/dark...')
-
+function switchBetweenDarkAndLightThemes() {
 	let body = document.body
 	body.classList.toggle(DARK_MODE_STR)
 	populateStorage()
 }
 
-// populate local storage with values, then apply those values
+// populate local storage with values, then apply/set those values
 // default mode is LIGHT MODE
 function populateStorage() {
 	const body = document.body
 	const isDarkModeToggled = body.classList.contains(DARK_MODE_STR)
 
 	if (isDarkModeToggled) {
-		console.log('dark mode is toggled => setting style as DARK')
+		// dark mode is toggled => setting style as DARK
 		localStorage.setItem(THEME_STR, DARK_MODE_STR)
 	} else {
-		console.log('light mode is toggled => setting style as LIGHT')
+		// light mode is toggled => setting style as LIGHT
 		localStorage.setItem(THEME_STR, LIGHT_MODE_STR)
 	}
 
 	setStyles()
 }
 
-// apply style that is set in local storage
+// apply the style that is currently set in local storage
 function setStyles() {
 	const theme = localStorage.getItem(THEME_STR)
 
@@ -59,16 +56,14 @@ function setStyles() {
 	// const sunSvgDisplay = window.getComputedStyle(sunSvg).getPropertyValue('display')
 
 	if (theme === LIGHT_MODE_STR) {
-		// light mode
-		console.log('theme is LIGHT -> hiding sun icon, displaying moon icon')
+		// theme is LIGHT -> hiding sun icon, displaying moon icon
 
 		sunSvg.style.display = DISPLAY_NONE_STR
 		moonSvg.style.display = DISPLAY_BLOCK_STR
 
 		body.classList.remove(DARK_MODE_STR)
 	} else {
-		// dark mode
-		console.log('theme is DARK -> hiding moon icon, displaying sun icon')
+		// theme is DARK -> hiding moon icon, displaying sun icon
 
 		sunSvg.style.display = DISPLAY_BLOCK_STR
 		moonSvg.style.display = DISPLAY_NONE_STR
@@ -77,4 +72,4 @@ function setStyles() {
 	}
 }
 
-styleswitcher.onclick = switchDarkLightTheme
+styleswitcher.onclick = switchBetweenDarkAndLightThemes
