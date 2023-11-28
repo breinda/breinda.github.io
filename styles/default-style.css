@@ -48,13 +48,30 @@ a:hover {
     color: #F07933;
 }
 
-img {
-    border: 0px;
+#style-switcher {
+    margin-top: 0.85rem;
+    margin-right: 0.85rem;
+
+    display: block;
+    margin-left: auto;
+
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#sun-svg {
+    display: none;
+    fill: #EDDFEF;
+}
+
+#moon-svg {
+    display: block;
+    fill: #464655;
 }
 
 .header {
     text-align: center;
-    height: 150px;
+    height: 12.5rem;
 }
 
 .header-text-container {
@@ -64,7 +81,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 1.65rem;
 }
 
 #greeting {
@@ -73,8 +90,8 @@ img {
     display: inline-block;
 }
 
-/* all :hover rules need to be prepended with body.hasHover */
-body.hasHover #greeting:hover {
+/* all :hover rules need to be prepended with body.with-mouse-input */
+body.with-mouse-input #greeting:hover {
     animation: shake 2s;
     animation-iteration-count: infinite;
 }
@@ -85,51 +102,48 @@ body.hasHover #greeting:hover {
 }
 
 #content {
-    margin-left: 175px;
-    margin-right: 175px;
-    padding: 5px;
+    margin-left: 14.6rem;
+    margin-right: 14.6rem;
+    padding: 0.45rem;
     text-align: center;
 }
 
-#leftmenu {
+#left-menu {
     position: absolute;
-    left: 5px;
+    left: 0.45rem;
     top: 0;
-    width: 150px;
-    padding: 5px;
+    width: 12.5rem;
+    padding: 0.45rem 0.45rem 1.25rem 0.45rem;
     text-align: left;
 }
 
-#rightmenu {
+#right-menu {
     position: absolute;
-    right: 5px;
+    right: 0.45rem;
     top: 0;
-    width: 150px;
-    padding: 5px;
+    width: 12.5rem;
+    padding: 0.45rem;
     text-align: right;
 }
 
-#leftmenu ul,
-#rightmenu ul {
+#left-menu ul,
+#right-menu ul {
     list-style-type: none;
     margin: 0;
-    padding: 0 5px;
+    padding: 0 0.45rem;
 }
 
-.talktome {
+.talk-to-me {
     display: flex;
-    margin-top: 10px;
+    margin-top: 0.85rem;
 }
 
 .speech-bubble {
 	position: relative;
 	background: #f1c40f;
-	border-radius: .4em;
+	border-radius: 0.4em;
 
-    /* width: 260px; */
-    /* padding: 60px 20px;
-    margin: 1em 0; */
-    left: 15px;
+    left: 1.25rem;
     text-align: center;
     color: #464655;
 
@@ -138,7 +152,7 @@ body.hasHover #greeting:hover {
     align-items: center;
     justify-content: center;
 
-    padding: 0 10px 0 10px;
+    padding: 0 0.85rem 0 0.85rem;
     margin: 1px;
 }
 
@@ -147,7 +161,7 @@ body.hasHover #greeting:hover {
 	position: absolute;
 	left: 0;
 	/* top: 50%; */
-    top: 46px;
+    top: 3.8rem;
 	width: 0;
 	height: 0;
 	border: 0.5em solid transparent;
@@ -159,35 +173,16 @@ body.hasHover #greeting:hover {
 
 #moi {
     border-radius: 50%;
-    width: 68px;
+    width: 5.65rem;
     height: auto;
     aspect-ratio: 1;
     align-self: start
 }
 
-/* all :hover rules need to be prepended with body.hasHover */
-body.hasHover #moi:hover {
+/* all :hover rules need to be prepended with body.with-mouse-input */
+body.with-mouse-input #moi:hover {
     animation: wigglewiggle 2s;
     animation-iteration-count: infinite;
-}
-
-#styleswitcher {
-    margin-top: 10px;
-    margin-right: 10px;
-    display: block;
-    margin-left: auto;
-    width: 30px;
-    height: 30px;
-}
-
-#sun-svg {
-    display: none;
-    fill: #EDDFEF;
-}
-
-#moon-svg {
-    display: block;
-    fill: #464655;
 }
 
 /* animation specs */
