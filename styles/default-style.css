@@ -1,15 +1,13 @@
-/* colour reference: https://coolors.co/464655-94958b-b7b6c1-d5cfe1-eddfef */
-
 html {
     -webkit-text-size-adjust: 100%;
     font-size: 12px;
 }
 
 body {
-    color: #464655;
+    color: #252135;
     font-family: verdana, sans-serif;
     font-size: 1.3rem;
-    background: #EDDFEF;
+    background: #FAF4EC;
     margin: 0;
     padding: 0;
 }
@@ -21,15 +19,14 @@ body {
     }
 } */
   
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-/* @media screen and (max-width: 600px) {
-    p {
+@media screen and (max-width: 600px) {
+    /* p {
         font-size: 20pt;
-    }
-} */
+    } */
+}
 
 h1 {
-    color: #464655;
+    color: #252135;
 }
 
 a:link {
@@ -61,12 +58,12 @@ a:hover {
 
 #sun-svg {
     display: none;
-    fill: #EDDFEF;
+    fill: #FAF4EC;
 }
 
 #moon-svg {
     display: block;
-    fill: #464655;
+    fill: #252135;
 }
 
 .header {
@@ -76,7 +73,7 @@ a:hover {
 
 .header-text-container {
     transform: rotate(2deg);
-    background-color: #F1C40F;
+    background-color: #D7827D;
     margin: 5%;
     display: flex;
     justify-content: center;
@@ -140,14 +137,14 @@ body.with-mouse-input #greeting:hover {
 
 .speech-bubble {
 	position: relative;
-	background: #f1c40f;
+	background: #D7827D;
 	border-radius: 0.4em;
 
     left: 1.25rem;
     text-align: center;
-    color: #464655;
+    color: #252135;
 
-    border: 1px solid #F1C40F;
+    border: 1px solid #D7827D;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,7 +162,7 @@ body.with-mouse-input #greeting:hover {
 	width: 0;
 	height: 0;
 	border: 0.5em solid transparent;
-	border-right-color: #f1c40f;
+	border-right-color: #D7827D;
 	border-left: 0;
 	margin-top: -0.5em;
 	margin-left: -0.5em;
@@ -224,17 +221,17 @@ body.with-mouse-input #moi:hover {
 
 /* dark mode styles */
 .dark-mode {
-    color: #EDDFEF;
-    background: #464655;
+    color: #FAF4EC;
+    background: #252135;
 }
 
 .dark-mode a {
-    color: #EDDFEF;
+    color: #FAF4EC;
 }
 
 .dark-mode a:link {
     text-decoration: underline;
-    color: #ED4D6E;
+    /* color: #ED4D6E; */
 }
 
 .dark-mode a:visited,
