@@ -1,14 +1,14 @@
 {
-	"name": "ts-seed",
+	"name": "breinda-github-io",
 	"version": "1.0.0",
-	"description": "Barebones seed files for TypeScript applications.",
+	"description": "html source files for personal website",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/breinda/ts-seed.git"
+		"url": "git+https://github.com/breinda/breinda.github.io.git"
 	},
 	"keywords": [
 		"seed",
@@ -19,9 +19,9 @@
 	"author": "breinda",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/breinda/ts-seed/issues"
+		"url": "https://github.com/breinda/breinda.github.io/issues"
 	},
-	"homepage": "https://github.com/breinda/ts-seed#readme",
+	"homepage": "https://github.com/breinda/breinda.github.io#readme",
 	"devDependencies": {
 		"prettier": "3.8.1",
 		"ts-node": "^10.9.2",
