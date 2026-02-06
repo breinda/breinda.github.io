@@ -3,23 +3,27 @@
 const THEME_KEY = 'theme'
 const DARK_MODE_VALUE = 'dark-mode'
 const LIGHT_MODE_VALUE = 'light-mode'
-
 const DARK_MODE_CLASS = 'dark-mode'
 
 const styleswitcher = document.getElementById('style-switcher')
 
 if (!localStorage.getItem(THEME_KEY)) {
 	// no theme defined => will set theme as LIGHT (default)
-	populateStorage()
+	populateStorage(LIGHT_MODE_VALUE)
 }
 applyStylesAccordingToTheme()
 
-// populate local storage with values, then apply/set those values
-function populateStorage() {
-	const body = document.body
-	const isDarkModeToggled = body.classList.contains(DARK_MODE_CLASS)
+// populate local storage with theme value, according to `mode` parameter
+function populateStorage(mode) {
+	// light mode is the default
+	// any unexpected value for mode is converted to light mode
+	if (mode !== LIGHT_MODE_VALUE && mode !== DARK_MODE_VALUE) {
+		mode = LIGHT_MODE_VALUE
+	}
 
-	if (isDarkModeToggled) {
+	const shouldToggleDarkMode = mode === DARK_MODE_VALUE
+
+	if (shouldToggleDarkMode) {
 		localStorage.setItem(THEME_KEY, DARK_MODE_VALUE)
 	} else {
 		localStorage.setItem(THEME_KEY, LIGHT_MODE_VALUE)
@@ -36,9 +40,6 @@ function applyStylesAccordingToTheme() {
 
 	const moonSvg = document.getElementById('moon-svg')
 	const sunSvg = document.getElementById('sun-svg')
-
-	// const moonSvgDisplay = window.getComputedStyle(moonSvg).getPropertyValue('display')
-	// const sunSvgDisplay = window.getComputedStyle(sunSvg).getPropertyValue('display')
 
 	if (theme === LIGHT_MODE_VALUE) {
 		// change icon to MOON
@@ -58,10 +59,14 @@ function applyStylesAccordingToTheme() {
 }
 
 function switchBetweenDarkAndLightThemes() {
-	let body = document.body
-	body.classList.toggle(DARK_MODE_CLASS)
+	const isCurrentlyDarkMode = localStorage.getItem(THEME_KEY) === DARK_MODE_VALUE
 
-	populateStorage()
+	if (isCurrentlyDarkMode) {
+		populateStorage(LIGHT_MODE_VALUE)
+	} else {
+		populateStorage(DARK_MODE_VALUE)
+	}
+
 	applyStylesAccordingToTheme()
 }
 
