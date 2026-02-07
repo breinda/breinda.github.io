@@ -5,11 +5,24 @@ html {
 
 body {
     color: #252135;
-    font-family: verdana, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
     font-size: 1.3rem;
     background: #FAF4EC;
     margin: 0;
     padding: 0;
+}
+
+.semibold-text {
+    font-weight: 600
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.extrabold-text {
+    font-weight: 800;
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
@@ -26,7 +39,7 @@ body {
 }
 
 h1 {
-    color: #252135;
+    color: #FAF4EC;
 }
 
 a:link {
@@ -223,6 +236,10 @@ body.with-mouse-input #moi:hover {
 .dark-mode {
     color: #FAF4EC;
     background: #252135;
+}
+
+.dark-mode h1 {
+    color: #252135;
 }
 
 .dark-mode a {
