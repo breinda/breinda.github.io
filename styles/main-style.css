@@ -84,14 +84,26 @@ a:hover {
     height: 12.5rem;
 }
 
-.header-text-container {
-    transform: rotate(2deg);
+.header-speech-bubble {
+    /* transform: rotate(2deg); */
     background-color: #D7827D;
-    margin: 5%;
+    margin-top: 5%;
+    margin-left: 12%;
+    margin-right: 12%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 1.65rem;
+    border-radius: 3rem;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 30px solid #D7827D;
+
+  margin: auto;
 }
 
 #greeting {
