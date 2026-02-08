@@ -3,10 +3,14 @@ html {
     font-size: 12px;
 }
 
-body {
+body, button {
     /* color: #252135; */
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
+    letter-spacing: 0.03em;
+}
+
+body {
     font-size: 1.3rem;
     background: #FAF4EC;
     margin: 0;
@@ -16,6 +20,44 @@ body {
 h1 {
     color: #FAF4EC;
 }
+
+button {
+    text-align: center;
+    color: #FAF4EC;
+    background-color: #276983;
+    border-radius: 1.5rem;
+    border-color: #585379;
+    border-style: solid;
+    width: 12rem;
+    height: 4.5rem;
+
+    /* border: 0; */
+    /* line-height: 2.5; */
+    /* padding: 0 20px; */
+    /* font-size: 1rem; */
+    /* text-shadow: 1px 1px 1px black; */
+    /* background-image: linear-gradient(
+        to top left,
+        rgb(0 0 0 / 0.2),
+        rgb(0 0 0 / 0.2) 30%,
+        transparent
+    );
+    box-shadow:
+        inset 2px 2px 3px rgb(255 255 255 / 0.6),
+        inset -2px -2px 3px rgb(0 0 0 / 0.6); */
+}
+
+button:hover {
+    /* background-color: red; */
+    background-color: #585379;
+}
+
+button:active {
+    box-shadow:
+        inset -2px -2px 3px rgb(255 255 255 / 0.6),
+        inset 2px 2px 3px rgb(0 0 0 / 0.6);
+}
+
 
 #style-switcher {
     margin-top: 0.85rem;
@@ -39,16 +81,18 @@ h1 {
 }
 
 .semibold-text {
-    font-weight: 600;
+    font-weight: 550;
     font-size: 2.2rem;
 }
 
 .bold-text {
-    font-weight: 700;
+    /* font-weight: 700; */
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 
 .extrabold-text {
-    font-weight: 800;
+    font-weight: 750;
     font-size: 2.4rem;
 }
 
