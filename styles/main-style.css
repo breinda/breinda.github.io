@@ -30,25 +30,9 @@ button {
     border-style: solid;
     width: 12rem;
     height: 4.5rem;
-
-    /* border: 0; */
-    /* line-height: 2.5; */
-    /* padding: 0 20px; */
-    /* font-size: 1rem; */
-    /* text-shadow: 1px 1px 1px black; */
-    /* background-image: linear-gradient(
-        to top left,
-        rgb(0 0 0 / 0.2),
-        rgb(0 0 0 / 0.2) 30%,
-        transparent
-    );
-    box-shadow:
-        inset 2px 2px 3px rgb(255 255 255 / 0.6),
-        inset -2px -2px 3px rgb(0 0 0 / 0.6); */
 }
 
 button:hover {
-    /* background-color: red; */
     background-color: #585379;
 }
 
@@ -62,7 +46,6 @@ button:focus-visible {
 
 button:active {
     box-shadow:
-        /* inset -2px -2px 3px rgb(255 255 255 / 0.6), */
         inset 2px 2px 3px rgb(0 0 0 / 0.6);
     transform: translateY(1px);
 }
@@ -80,7 +63,7 @@ button:active {
 
 #sun-svg {
     display: none;
-    fill: #FAF4EC;
+    fill: #DFDDF4;
 }
 
 #moon-svg {
