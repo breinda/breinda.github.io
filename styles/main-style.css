@@ -78,7 +78,6 @@ a:hover {
 
 #moon-svg {
     display: block;
-    /* fill: #252135; */
     fill: #585379;
 }
 
@@ -194,11 +193,14 @@ body.with-mouse-input #greeting:hover {
 
 #moi {
     border-radius: 50%;
-    width: 5.65rem;
+    width: 12rem;
     height: auto;
     aspect-ratio: 1;
     align-self: start;
     margin-top: 1em;
+    border-style: solid;
+    border-color: #585379;
+    border-width: 0.335rem;
 }
 
 /* all :hover rules need to be prepended with body.with-mouse-input */
