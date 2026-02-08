@@ -121,6 +121,20 @@ button:active {
   margin: auto;
 }
 
+.links-grid {
+    display: flex;
+    justify-content: center;
+    column-gap: 1em;
+}
+
+.first-row {
+    margin-top: 1.5em;
+}
+
+.subsequent-rows {
+    margin-top: 1em;
+}
+
 #greeting {
     animation: shake 2s;
     animation-iteration-count: 1.5;
