@@ -21,22 +21,30 @@ h1 {
     color: #FAF4EC;
 }
 
-button {
+.btn {
+    /* default for <button>, but useful for <a> */
+    display: inline-block;
     text-align: center;
+    text-decoration: none;
+
+    padding-top: 1.29rem;
+    padding-bottom: 1.29rem;
+
+    width: 11.67rem;
+
     color: #FAF4EC;
     background-color: #276983;
     border-radius: 1.5rem;
+    border-width: 0.17rem;
     border-color: #585379;
     border-style: solid;
-    width: 12rem;
-    height: 4.5rem;
 }
 
-button:hover {
+.btn:hover {
     background-color: #585379;
 }
 
-button:focus-visible {
+.btn:focus-visible {
     /* paint a 2px white pseudo-outline using box-shadow */
     box-shadow: 0 0 0 2px #fff;
     /* then paint a 2px dark pink outline and offset it to reveal one or two pixels of the pseudo-outline */
@@ -44,7 +52,7 @@ button:focus-visible {
     outline-offset: 1px;
 }
 
-button:active {
+.btn:active {
     box-shadow:
         inset 2px 2px 3px rgb(0 0 0 / 0.6);
     transform: translateY(1px);
