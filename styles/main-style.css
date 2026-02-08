@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    color: #252135;
+    /* color: #252135; */
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-size: 1.3rem;
@@ -13,51 +13,8 @@ body {
     padding: 0;
 }
 
-.semibold-text {
-    font-weight: 600;
-    font-size: 2.2rem;
-}
-
-.bold-text {
-    font-weight: 700;
-}
-
-.extrabold-text {
-    font-weight: 800;
-    font-size: 2.4rem;
-}
-
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-/* @media screen and (min-width: 601px) {
-    p {
-        font-size: 10pt;
-    }
-} */
-  
-@media screen and (max-width: 600px) {
-    /* p {
-        font-size: 20pt;
-    } */
-}
-
 h1 {
     color: #FAF4EC;
-}
-
-a:link {
-    text-decoration: underline;
-    color: #ED4D6E;
-}
-
-a:visited,
-a:active {
-    text-decoration: underline;
-    color: #94958B;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #F07933;
 }
 
 #style-switcher {
@@ -79,6 +36,20 @@ a:hover {
 #moon-svg {
     display: block;
     fill: #585379;
+}
+
+.semibold-text {
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.extrabold-text {
+    font-weight: 800;
+    font-size: 2.4rem;
 }
 
 .header {
@@ -126,31 +97,6 @@ body.with-mouse-input #greeting:hover {
 #content {
     padding: 0.45rem;
     text-align: center;
-}
-
-#left-menu {
-    position: absolute;
-    left: 0.45rem;
-    top: 0;
-    width: 12.5rem;
-    padding: 0.45rem 0.45rem 1.25rem 0.45rem;
-    text-align: left;
-}
-
-#right-menu {
-    position: absolute;
-    right: 0.45rem;
-    top: 0;
-    width: 12.5rem;
-    padding: 0.45rem;
-    text-align: right;
-}
-
-#left-menu ul,
-#right-menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0 0.45rem;
 }
 
 .talk-to-me {
@@ -213,44 +159,58 @@ body.with-mouse-input #moi:hover {
     100% { transform: rotate(-5deg); }
 }
 
-/* dark mode styles */
-.dark-mode {
-    color: #FAF4EC;
-    background: #252135;
-}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+/* @media screen and (min-width: 601px) {
+    p {
+        font-size: 10pt;
+    }
+} */
+  
+/* @media screen and (max-width: 600px) {
+    p {
+        font-size: 20pt;
+    }
+} */
 
-.dark-mode h1 {
-    color: #252135;
-}
-
-.dark-mode a {
-    color: #FAF4EC;
-}
-
-.dark-mode a:link {
+/* 
+a:link {
     text-decoration: underline;
-    /* color: #ED4D6E; */
+    color: #ED4D6E;
 }
 
-.dark-mode a:visited,
-.dark-mode a:active {
+a:visited,
+a:active {
     text-decoration: underline;
     color: #94958B;
 }
 
-.dark-mode a:hover {
+a:hover {
     text-decoration: underline;
     color: #F07933;
+} */
+
+/* 
+#left-menu {
+    position: absolute;
+    left: 0.45rem;
+    top: 0;
+    width: 12.5rem;
+    padding: 0.45rem 0.45rem 1.25rem 0.45rem;
+    text-align: left;
 }
 
-.dark-mode #moi {
-    border-color: #EB9A97;
+#right-menu {
+    position: absolute;
+    right: 0.45rem;
+    top: 0;
+    width: 12.5rem;
+    padding: 0.45rem;
+    text-align: right;
 }
 
-.dark-mode .header-speech-bubble {
-    background-color: #EB9A97;
-}
-
-.dark-mode .arrow-down {
-    border-top-color: #EB9A97;
-}
+#left-menu ul,
+#right-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0.45rem;
+} */

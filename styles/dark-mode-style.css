@@ -1,0 +1,41 @@
+
+/* dark mode styles */
+.dark-mode {
+    /* color: #FAF4EC; */
+    background: #252135;
+}
+
+.dark-mode h1 {
+    color: #252135;
+}
+
+.dark-mode #moi {
+    border-color: #EB9A97;
+}
+
+.dark-mode .header-speech-bubble {
+    background-color: #EB9A97;
+}
+
+.dark-mode .arrow-down {
+    border-top-color: #EB9A97;
+}
+
+/* .dark-mode a {
+    color: #FAF4EC;
+}
+
+.dark-mode a:link {
+    text-decoration: underline;
+}
+
+.dark-mode a:visited,
+.dark-mode a:active {
+    text-decoration: underline;
+    color: #94958B;
+}
+
+.dark-mode a:hover {
+    text-decoration: underline;
+    color: #F07933;
+} */
