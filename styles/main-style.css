@@ -52,12 +52,20 @@ button:hover {
     background-color: #585379;
 }
 
-button:active {
-    box-shadow:
-        inset -2px -2px 3px rgb(255 255 255 / 0.6),
-        inset 2px 2px 3px rgb(0 0 0 / 0.6);
+button:focus-visible {
+    /* paint a 2px white pseudo-outline using box-shadow */
+    box-shadow: 0 0 0 2px #fff;
+    /* then paint a 2px dark pink outline and offset it to reveal one or two pixels of the pseudo-outline */
+    outline: solid 2px #d59;
+    outline-offset: 1px;
 }
 
+button:active {
+    box-shadow:
+        /* inset -2px -2px 3px rgb(255 255 255 / 0.6), */
+        inset 2px 2px 3px rgb(0 0 0 / 0.6);
+    transform: translateY(1px);
+}
 
 #style-switcher {
     margin-top: 0.85rem;
