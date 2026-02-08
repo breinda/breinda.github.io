@@ -78,7 +78,8 @@ a:hover {
 
 #moon-svg {
     display: block;
-    fill: #252135;
+    /* fill: #252135; */
+    fill: #585379;
 }
 
 .header {
