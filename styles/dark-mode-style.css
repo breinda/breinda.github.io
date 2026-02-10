@@ -1,30 +1,40 @@
-
 /* dark mode styles */
+:root {
+    --off-white: #DFDDF4;
+    --dark-purple: #252135;
+    --light-salmon: #EB9A97;
+    --light-purple: #C4A7E6;
+}
+
+#sun-svg {
+    display: none;
+    fill: var(--off-white);
+}
+
 .dark-mode {
-    /* color: #FAF4EC; */
-    background: #252135;
+    background: var(--dark-purple);
 }
 
 .dark-mode h1 {
-    color: #252135;
+    color: var(--dark-purple);
 }
 
 .dark-mode #moi {
-    border-color: #EB9A97;
+    border-color: var(--light-salmon);
 }
 
 .dark-mode .header-speech-bubble {
-    background-color: #EB9A97;
+    background-color: var(--light-salmon);
 }
 
 .dark-mode .arrow-down {
-    border-top-color: #EB9A97;
+    border-top-color: var(--light-salmon);
 }
 
 .dark-mode .btn {
-    color: #252135;
-    background-color: #C4A7E6;
-    border-color: #DFDDF4;
+    color: var(--dark-purple);
+    background-color: var(--light-purple);
+    border-color: var(--off-white);
 }
 
 .dark-mode .btn:focus-visible {

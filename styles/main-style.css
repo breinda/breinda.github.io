@@ -1,10 +1,16 @@
+:root {
+    --cream: #FAF4EC;
+    --petrol-blue: #276983;
+    --purple: #585379;
+    --salmon: #D7827D;
+}
+
 html {
     -webkit-text-size-adjust: 100%;
     font-size: 12px;
 }
 
 body, button {
-    /* color: #252135; */
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     letter-spacing: 0.03em;
@@ -12,13 +18,13 @@ body, button {
 
 body {
     font-size: 1.3rem;
-    background: #FAF4EC;
+    background: var(--cream);
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    color: #FAF4EC;
+    color: var(--cream);
 }
 
 .btn {
@@ -32,16 +38,16 @@ h1 {
 
     width: 11.67rem;
 
-    color: #FAF4EC;
-    background-color: #276983;
+    color: var(--cream);
+    background-color: var(--petrol-blue);
     border-radius: 1.5rem;
     border-width: 0.17rem;
-    border-color: #585379;
+    border-color: var(--purple);
     border-style: solid;
 }
 
 .btn:hover {
-    background-color: #585379;
+    background-color: var(--purple);
 }
 
 .btn:focus-visible {
@@ -69,14 +75,9 @@ h1 {
     height: 2.5rem;
 }
 
-#sun-svg {
-    display: none;
-    fill: #DFDDF4;
-}
-
 #moon-svg {
     display: block;
-    fill: #585379;
+    fill: var(--purple);
 }
 
 .semibold-text {
@@ -101,7 +102,7 @@ h1 {
 
 .header-speech-bubble {
     /* transform: rotate(2deg); */
-    background-color: #D7827D;
+    background-color: var(--salmon);
     margin: auto;
     width: 15em;
     display: flex;
@@ -115,7 +116,7 @@ h1 {
   height: 0; 
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-top: 30px solid #D7827D;
+  border-top: 30px solid var(--salmon);
 
   margin: auto;
 }
@@ -169,7 +170,7 @@ body.with-mouse-input #greeting:hover {
     align-self: start;
     margin-top: 1em;
     border-style: solid;
-    border-color: #585379;
+    border-color: var(--purple);
     border-width: 0.335rem;
 
     animation: wigglewigglepause 8s;
