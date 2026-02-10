@@ -171,6 +171,10 @@ body.with-mouse-input #greeting:hover {
     border-style: solid;
     border-color: #585379;
     border-width: 0.335rem;
+
+    animation: wigglewigglepause 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
 }
 
 /* all :hover rules need to be prepended with body.with-mouse-input */
@@ -214,6 +218,19 @@ body.with-mouse-input #moi:hover {
     80% { transform: rotate(5deg); }
     90% { transform: rotate(0deg); }
     100% { transform: rotate(-5deg); }
+}
+
+@keyframes wigglewigglepause {
+    0% { transform: rotate(0deg); }
+    5% { transform: rotate(-5deg); }
+    10% { transform: rotate(5deg); }
+    15% { transform: rotate(0deg); }
+    20% { transform: rotate(5deg); }
+    25% { transform: rotate(-5deg); }
+    30% { transform: rotate(0deg); }
+    35%, 100% {
+        transform: rotate(0deg);
+    }
 }
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
