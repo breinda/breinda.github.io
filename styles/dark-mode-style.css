@@ -37,6 +37,10 @@
     border-color: var(--off-white);
 }
 
+.dark-mode .btn:hover {
+    background-color: var(--off-white);
+}
+
 .dark-mode .btn:focus-visible {
     /* paint a 2px white pseudo-outline using box-shadow */
     box-shadow: 0 0 0 2px #000000;
