@@ -135,16 +135,9 @@ h1 {
     margin-top: 1em;
 }
 
-#greeting {
-    animation: shake 2s;
-    animation-iteration-count: 1.5;
-    display: inline-block;
-}
-
-/* all :hover rules need to be prepended with body.with-mouse-input */
-body.with-mouse-input #greeting:hover {
-    animation: shake 2s;
-    animation-iteration-count: infinite;
+.talk-to-me {
+    display: flex;
+    margin-top: 0.85rem;
 }
 
 #container {
@@ -157,9 +150,39 @@ body.with-mouse-input #greeting:hover {
     text-align: center;
 }
 
-.talk-to-me {
-    display: flex;
-    margin-top: 0.85rem;
+#greeting {
+    display: inline-block;
+
+    animation: jump 1.2s;
+    animation-iteration-count: 1;
+}
+
+/* all :hover rules need to be prepended with body.with-mouse-input */
+body.with-mouse-input #greeting:hover {
+    /* prevent jump animation from re-running after a hover */
+    /* see: https://stackoverflow.com/questions/71240871/how-to-prevent-a-css-animation-from-rerunning-after-a-second-hover-animation */
+    animation: jump 2s, shake 2s;
+    animation-iteration-count: 1, infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes jump {
+    0% { transform: translate(0px, 0px) scale(100%); }
+    50% { transform: translate(0px, -5px) scale(130%); }
+    100% { transform: translate(0px, 0px) scale(100%); }
 }
 
 #moi {
@@ -191,20 +214,6 @@ body.with-mouse-input #moi:hover {
     85% { transform: rotate(5deg); }
     95% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
-}
-
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 @keyframes wigglewiggle {
