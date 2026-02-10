@@ -146,7 +146,7 @@ h1 {
 }
 
 #content {
-    padding: 0.45rem;
+    padding: 0.45rem 0.45rem 2rem 0.45rem;
     text-align: center;
 }
 
